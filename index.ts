@@ -1,10 +1,12 @@
+
+declare module "frevvo"{
+    export = frevvo;
+}
+
 declare const frevvo: IFrevvoStatic;
 
 interface IFrevvoStatic {
-    log(message: string): void;
-    currentDate():string;
+    log(logLevel: string, message: string):void;
 }
 
-interface IFormStatic {
-    load():boolean;
-}
+frevvo.log("","");
